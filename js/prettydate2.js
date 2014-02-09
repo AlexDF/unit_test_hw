@@ -4,7 +4,7 @@ var prettyDate = {
       diff = (((new Date(now)).getTime() - date.getTime()) / 1000),
       day_diff = Math.floor(diff / 86400);
 
-    if( isNan(day_diff) || day_diff < 0 || day_diff >= 31 )
+    if( isNaN(day_diff) || day_diff < 0 || day_diff >= 31 )
       return;
 
     return day_diff === 0 && (
